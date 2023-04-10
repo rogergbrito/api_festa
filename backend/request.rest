@@ -1,0 +1,95 @@
+### SERVICES
+
+### Criar serviço
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+  "name": "Algum serviço 3",
+  "description": "Alguma descrição 3",
+  "price": 1700,
+  "image": "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+}
+
+### Busca serviços
+GET http://localhost:3000/api/services
+
+### Busca um serviço
+GET http://localhost:3000/api/services/643421a498f9c46346fcd07b
+
+### Apaga serviço
+DELETE http://localhost:3000/api/services/643421a498f9c46346fcd07b
+
+### Atualiza serviço
+PUT http://localhost:3000/api/services/643424844fe9947ddb8c1eca
+Content-Type: application/json
+
+{
+  "name": "TESTE ATUALIZACAO",
+  "description": "Alguma descrição21",
+  "price": 2500,
+  "image": "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+}
+
+### PARTIES
+
+### Criar festa
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+  "title": "Meu evento 2",
+  "author": "Matheus",
+  "description": "Uma festa de aniversário",
+  "budget": 9000,
+  "image": "https://t.ctcdn.com.br/5XPASDBUosgmBv5Ptpxcd6eTJso=/512x288/smart/filters:format(webp)/i257652.jpeg",
+  "services": [
+    {
+      "name": "Algum serviço 1",
+      "description": "Alguma descrição 3",
+      "price": 3000,
+      "image": "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+    },
+    {
+      "name": "Algum serviço 2",
+      "description": "Alguma descrição 3",
+      "price": 1600,
+      "image": "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+    }
+  ]
+}
+
+### Buscar festas
+GET http://localhost:3000/api/parties
+
+### Buscar uma festa
+GET http://localhost:3000/api/parties/64343519fc2a8358cc3d4591
+
+### Apagar uma festa
+DELETE http://localhost:3000/api/parties/6434349afc2a8358ccd458f
+
+### Atualizar uma festa
+PUT http://localhost:3000/api/parties/64343519fc2a8358cc3d4591
+Content-Type: application/json
+
+{
+  "title": "Meu evento 7",
+  "author": "Matheus",
+  "description": "Uma festa de aniversário",
+  "budget": 1000,
+  "image": "https://t.ctcdn.com.br/5XPASDBUosgmBv5Ptpxcd6eTJso=/512x288/smart/filters:format(webp)/i257652.jpeg",
+  "services": [
+    {
+      "name": "Algum serviço 1",
+      "description": "Alguma descrição 3",
+      "price": 3000,
+      "image": "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+    },
+    {
+      "name": "Algum serviço 2",
+      "description": "Alguma descrição 3",
+      "price": 1600,
+      "image": "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+    }
+  ]
+}
